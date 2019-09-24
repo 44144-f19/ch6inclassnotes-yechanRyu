@@ -2,8 +2,16 @@ body {background-color: #00005d;
 	 font-family: Verdana, Arial, sans-serif;
 	 }
 header {background-color: #869dc7;
+    height:150px;
+    margin-bottom:0px;
+    background-image:url(images/lighthousebanner.jpg);
+    background-repeat: no-repeat;
+    
 }
 h1 {
+    text-indent:100%;
+    white-space: nowrap;
+    overflow:hidden;
 	}
 h2 {color: #869dc7;
 	font-family: Arial, sans-serif;
@@ -18,16 +26,27 @@ footer {font-size: 70%;
 		 width: 80%;
 		 background-color: #b3c7e6;
 		 color: #000066;
+    min-width: :960px; min-width: 1200px;
 		 }
 nav { font-weight: bold;
 	 letter-spacing: 0.1em;
+    float: right;
+    width: 200px;
 	 }
 nav ul {list-style-type: none;
+        margin:0px;
+    padding:0px;
 	  }
 nav a{
+    padding:20px;
+    text-decoration: none;
 	  background-color: #b3c7e6;
+      display: block;
 	  border-bottom: 1px solid #ffffff;
 	  }
+nav a:link{color:#fff;}
+nav a:visited{color:#ddd9d9;}
+nav a: hover{color:#869dc7;}
 h3 {margin-bottom: 0px;}
 
 main {background-color: #ffffff;
@@ -36,6 +55,8 @@ main {background-color: #ffffff;
 	 }
 main ul{list-style-type: none;}
 main li{
+    display: inline-block;
+    margin: 5px;
 	  width: 225px;
 	  padding-bottom: 10px;
 	  margin: 10px;
@@ -44,8 +65,16 @@ main li{
 	  font-style: italic;
 	  font-family: Georgia, serif;
 	}
-aside {
-	 width: 200px;
+#floatright{float: right;
+margin:20px;}
+main p{position: relative;
+       left:20px;}
+
+aside {float:right;
+    margin-right: 40;
+    position:relative;
+    width:200px;
+    top: -40;
 	 background-color: #eaeaea;
 	 padding: 20px;
 	 font-size: 80%;
